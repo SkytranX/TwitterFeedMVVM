@@ -5,6 +5,7 @@ public class Twitter {
     private String user_Id;
     private String user_Message;
     private String user_Image;
+    private String user_Time;
 
     public  Twitter(String user_Name, String user_Id, String user_Message, String user_Image, String user_Time){
         this.user_Name = user_Name;
@@ -18,10 +19,6 @@ public class Twitter {
     public String getUser_Time() {
         return user_Time;
     }
-
-
-    private String user_Time;
-
 
     public String getUser_Name() {
         return user_Name;

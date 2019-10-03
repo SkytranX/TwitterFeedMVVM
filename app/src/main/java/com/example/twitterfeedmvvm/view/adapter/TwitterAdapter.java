@@ -29,7 +29,7 @@ public class TwitterAdapter extends RecyclerView.Adapter<TwitterAdapter.TwitterV
                 false
         );
 
-        return TwitterViewHolder(view);
+        return new TwitterViewHolder(view);
     }
 
     @Override
