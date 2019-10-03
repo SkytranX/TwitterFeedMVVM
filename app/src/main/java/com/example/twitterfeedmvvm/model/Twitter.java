@@ -1,13 +1,15 @@
 package com.example.twitterfeedmvvm.model;
 
+import java.util.Date;
+
 public class Twitter {
     private String user_Name;
     private String user_Id;
     private String user_Message;
     private String user_Image;
-    private String user_Time;
+    private Date user_Time;
 
-    public  Twitter(String user_Name, String user_Id, String user_Message, String user_Image, String user_Time){
+    public  Twitter(String user_Name, String user_Id, String user_Message, String user_Image, Date user_Time){
         this.user_Name = user_Name;
         this.user_Id = user_Id;
         this.user_Message = user_Message;
@@ -16,9 +18,11 @@ public class Twitter {
     }
 
 
-    public String getUser_Time() {
+    public Date getUser_Time() {
         return user_Time;
     }
+
+    public void  setUser_Time(Date user_Time) {this.user_Time = user_Time;}
 
     public String getUser_Name() {
         return user_Name;
